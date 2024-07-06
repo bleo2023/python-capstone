@@ -18,7 +18,7 @@ def main():
     most_watched_show = most_watched.index[0]
     print(f"The most watched show is {most_watched_show}")
     # Filter by Title containing 'Roman Empire' and Duration > '0 days 00:01:00'
-    roman_empire = df[df['Title'].str.contains('One Piece', regex=False)]
+    roman_empire = df[df['Title'].str.contains('Roman Empire', regex=False)]
     roman_empire = roman_empire[(roman_empire['Duration'] > '0 days 00:01:00')]
 
     # Ensure 'Start Time' is datetime format
